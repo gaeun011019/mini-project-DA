@@ -1,0 +1,7 @@
+model,train_cv_mae,train_cv_mae_std,best_parameters
+GradientBoosting,75.70981630900525,6.672017040598578,"{""model__learning_rate"": 0.05, ""model__max_depth"": 2, ""model__min_samples_leaf"": 4, ""model__n_estimators"": 200}"
+ExtraTrees,81.46606944444444,17.183269789971924,"{""model__max_depth"": null, ""model__max_features"": 1.0, ""model__min_samples_leaf"": 1}"
+RandomForest,86.39744444444443,15.90097350280182,"{""model__max_depth"": null, ""model__max_features"": 0.5, ""model__min_samples_leaf"": 1}"
+ElasticNet,143.57508571893223,17.72561541653238,"{""model__alpha"": 100, ""model__l1_ratio"": 0.1}"
+Dummy,148.32004273504276,20.01619016554228,"{""model__strategy"": ""mean""}"
+Ridge,220.60650761022902,148.42926171216902,"{""model__alpha"": 1000}"

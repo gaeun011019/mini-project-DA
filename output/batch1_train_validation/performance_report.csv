@@ -1,0 +1,7 @@
+구분,MAPE (%),비고
+Train (Batch 1 CV),9.549816210102023,Batch 1 학습 셀 내부 4-fold CV 평균
+Valid (Batch 1 Hold-out),12.81421070343567,모델 선택에 사용하지 않은 Batch 1 셀
+Test (Batch 2),67.03655042471249,정답이 있는 39개 셀 최종 평가
+Gap (Train-Valid),3.264394493333647,(+) : 과적합 의심
+Gap (Valid-Test),54.22233972127682,(+) : 배치 간 일반화 저하 의심
+Gap (Target-Test),57.936550424712486,Target : 원논문 9.1%

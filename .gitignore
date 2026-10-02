@@ -1,0 +1,50 @@
+# macOS
+.DS_Store
+._*
+
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Raw battery datasets (several GB)
+data/Batch1
+data/Batch2
+*.mat
+
+# Serialized trained models
+*.joblib
+*.pkl
+*.pickle
+
+# Temporary build files
+tmp/
+
+# Logs and local temporary files
+*.log
+*.tmp
+*.temp
+~$*

@@ -1,0 +1,64 @@
+{
+  "data_used": "Batch1 only",
+  "batch2_used": true,
+  "split": {
+    "train_cells": 34,
+    "validation_cells": 12,
+    "test_size": 0.25,
+    "random_state": 42,
+    "stratified_by": "cycle_life quartile"
+  },
+  "selection_rule": "lowest 4-fold CV MAE within Batch1 training split",
+  "selected_model": "GradientBoosting",
+  "best_parameters": {
+    "model__learning_rate": 0.05,
+    "model__max_depth": 2,
+    "model__min_samples_leaf": 4,
+    "model__n_estimators": 200
+  },
+  "validation_metrics": {
+    "MAE": 99.4329057989416,
+    "MAPE_pct": 12.81421070343567,
+    "RMSE": 120.20539426065123,
+    "R2": 0.5363439010653038
+  },
+  "train_cv_mape_pct": 9.549816210102023,
+  "batch2_test": {
+    "total_cells": 47,
+    "labeled_cells": 39,
+    "unlabeled_cells": 8
+  },
+  "test_metrics": {
+    "MAE": 323.2511900282998,
+    "MAPE_pct": 67.03655042471249,
+    "RMSE": 350.2552120257283,
+    "R2": -1.55009139077656
+  },
+  "feature_count": 24,
+  "features": [
+    "first_C",
+    "switch_SOC",
+    "second_C",
+    "QD_mean",
+    "QD_std",
+    "QD_slope",
+    "QD_change_10_100",
+    "IR_mean",
+    "IR_std",
+    "IR_slope",
+    "IR_change_10_100",
+    "Tavg_mean",
+    "Tavg_std",
+    "Tavg_slope",
+    "Tavg_change_10_100",
+    "chargetime_mean",
+    "chargetime_std",
+    "chargetime_slope",
+    "chargetime_change_10_100",
+    "temp_range_mean",
+    "dq_mean",
+    "dq_min",
+    "dq_variance",
+    "dq_area_abs"
+  ]
+}
