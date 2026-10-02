@@ -33,6 +33,7 @@ env/
 # Raw battery datasets (several GB)
 data/Batch1
 data/Batch2
+data/*.part
 *.mat
 
 # Serialized trained models

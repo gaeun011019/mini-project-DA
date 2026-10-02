@@ -20,7 +20,9 @@
 ```text
 ├── data/
 │   ├── Batch1
-│   └── Batch2
+│   ├── Batch2
+│   ├── download_data.py
+│   └── README.md
 ├── notebooks/
 │   ├──01_EDA_FeatureEngineering.ipynb  # 데이터 구조 확인, EDA, 피처 설계
 │   └──02_modeling.ipynb                # 모델 비교, 검증, Batch2 테스트
@@ -43,9 +45,10 @@
 
 ## 실행 방법
 
-1. `data/` 폴더에 Batch1과 Batch2 원본 파일이 있는지 확인한다.
-2. `EDA_FeatureEngineering.ipynb`를 실행해 EDA와 초기 100사이클 피처 생성 과정을 확인한다.
-3. `modeling.ipynb`를 위에서부터 실행한다.
+1. 원본 데이터가 없다면 프로젝트 루트에서 `python data/download_data.py`를 실행한다.
+2. `data/` 폴더에 Batch1과 Batch2가 생성됐는지 확인한다.
+3. `notebooks/01_EDA_FeatureEngineering.ipynb`를 실행해 EDA와 초기 100사이클 피처 생성 과정을 확인한다.
+4. `notebooks/02_modeling.ipynb`를 위에서부터 실행한다.
 
 노트북은 현재 Jupyter 커널에서 필요한 패키지를 확인하고, 없는 패키지만 자동으로 설치한다. 모델링에 사용하는 주요 패키지는 `numpy`, `pandas`, `scikit-learn`, `matplotlib`, `joblib`이다.
 
